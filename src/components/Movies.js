@@ -9,12 +9,12 @@ function Movies() {
       <div key={movie.title}>
         Title: {movie.title}
         Time: {movie.time}
-        <li>
+        <ul>
           {movie.genres.map((genre)=>
-          <ul key={genre}>
+          <li key={genre}>
             {genre}
-          </ul>)}
-        </li>
+          </li>)}
+        </ul>
       </div>)}
   </div>
   );
